@@ -1,0 +1,63 @@
+.welcome {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.welcomeimg {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+.welcome h1 {
+    position: absolute;
+    top: 10%;
+    font-family: 'Rowdies';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 119px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: beige;
+}
+.welcome button {
+    position: absolute;
+    top: 30%;
+    width: 395px;
+    height: 79px;
+    left: 35%;
+    background: #FE3B1F;
+    border-radius: 50px;
+}
+.welcome h4 {
+    position: absolute;
+    width: 338px;
+    height: 66px;
+    left: 40%;
+    top: 50%;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+.rocketman {
+    position: absolute;
+    width: 300.92px;
+    height: 200.45px;
+    left: 40%;
+    top: 60%;
+    transform: rotate(-27.28deg);
+}

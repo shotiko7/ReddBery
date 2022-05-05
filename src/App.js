@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
+import Welcome from "./Component/Welcome";
 
 function App() {
   return (
-    <div className="App">
-      
-    </div>
+    <Fragment>
+      <Welcome />
+    </Fragment>
   );
 }
 
