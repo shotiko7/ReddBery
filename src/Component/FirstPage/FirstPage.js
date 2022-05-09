@@ -2,10 +2,11 @@ import React, {useContext} from 'react'
 import Visible, { VisibleContext } from '../Helper/Visible'
 
 function FirstPage() {
-    const {goFirstPage}=useContext(VisibleContext);
+    const {welcomeFirst, firstSecond}=useContext(VisibleContext);
   return (
     <div>
-        <button onClick={goFirstPage}> Back </button>
+        <button onClick={welcomeFirst}> Back </button>
+        <button onClick={firstSecond}> next </button>
     </div>
   )
 }

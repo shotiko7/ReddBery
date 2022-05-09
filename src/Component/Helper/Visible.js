@@ -3,10 +3,12 @@ import React, {useState} from 'react'
 export const VisibleContext = React.createContext()
 
 function Visible(props) {
+  
     const [welcome, setWelcome]=useState(true);
     const [first, setFirst]=useState(false);
+    const [second, setSecond]=useState(false)
     
-    const goFirstPage =()=>{
+    const welcomeFirst =()=>{
         if(welcome){
           setWelcome(false)
           setFirst(true)
@@ -14,9 +16,17 @@ function Visible(props) {
           setFirst(false);
           setWelcome(true);
         }
-
     }
-    const value = {welcome, goFirstPage, first}
+    const firstSecond =()=>{
+      if(first){
+        setFirst(false)
+        setSecond(true)
+      }else {
+        setSecond(false)
+        setFirst(true)
+      }
+    }
+    const value = {welcome, welcomeFirst, first, firstSecond, second}
   return (
     <VisibleContext.Provider value={value}>
         {props.children}
